@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ashraf | AI & Machine Learning Engineer</title>
+    <meta name="description"
+        content="Portfolio of Ahmed Ashraf, an AI and Machine Learning Engineer specializing in NLP, Computer Vision, and Predictive Analytics.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AA<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button></li>
+                <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="neural-canvas"></canvas>
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Ahmed Ashraf</h1>
+                <h2 class="role">AI & Machine Learning Engineer</h2>
+                <div class="typewriter">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/ahmedashraf792002" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ahmed-ashraf-59a207234" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://kaggle.com/ahmedashrafahmed" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    <a href="mailto:ahmedashraf390@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="contact-mini" style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+                    <p><i class="fas fa-map-marker-alt"></i> Shebin Al-Qanater, Al-Qalyubia, Egypt</p>
+                    <p><i class="fas fa-phone"></i> +20 1097436928</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="assets/profile.png" alt="Ahmed Ashraf">
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="num">01.</span> About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am an <strong>AI & Machine Learning Engineer</strong> with a strong foundation in AI and
+                            Computer Science. I specialize in designing, developing, and optimizing <strong>ML and DL
+                                models</strong> to tackle complex problems in <strong>NLP, Computer Vision, and
+                                predictive analytics</strong>.</p>
+                        <p>Proficient in transformer-based architectures (LLMs) and experienced in
+                            <strong>MLOps</strong> for building scalable, production-ready AI systems. I am passionate
+                            about innovation, data-driven decision-making, and delivering impactful, business-focused AI
+                            solutions.
+                        </p>
+
+                        <div class="education-card">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <div class="edu-item">
+                                <h4>Bachelor of Computer Science and Artificial Intelligence</h4>
+                                <p class="sub">Benha University (Graduated 2024)</p>
+                                <p class="gpa">GPA: 3.76 / 4.0</p>
+                            </div>
+                            <div class="edu-item">
+                                <h4>AI / ML Training Program</h4>
+                                <p class="sub">Information Technology Institute (ITI), Menoufia, Egypt (Aug 2023 – Oct
+                                    2023)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="expertise" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="num">02.</span> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Arabic (Native)</span>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> ML & DL</h3>
+                        <div class="tags">
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                            <span>PyTorch</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-comments"></i> NLP & LLMs</h3>
+                        <div class="tags">
+                            <span>NLTK</span>
+                            <span>SpaCy</span>
+                            <span>Transformers (Hugging Face)</span>
+                            <span>LangChain</span>
+                            <span>LlamaIndex</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-eye"></i> Computer Vision</h3>
+                        <div class="tags">
+                            <span>OpenCV</span>
+                            <span>Ultralytics YOLO</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data & MLOps</h3>
+                        <div class="tags">
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>SciPy</span>
+                            <span>SQL</span>
+                            <span>MLflow</span>
+                            <span>CML</span>
+                            <span>Streamlit</span>
+                            <span>Flask/FastAPI</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                        <div class="tags">
+                            <span>Communication</span>
+                            <span>Problem Solving</span>
+                            <span>Teamwork</span>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="num">03.</span> Experience</h2>
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2023 – Dec 2023</div>
+                        <div class="timeline-content">
+                            <h3>AI & ML Engineer Intern</h3>
+                            <h4>Electropi (Cairo, Egypt)</h4>
+                            <ul>
+                                <li>Conducted sentiment analysis on Amazon reviews using LSTM models to extract customer
+                                    insights.</li>
+                                <li>Enhanced pneumonia diagnosis accuracy in chest X-ray images by applying CNNs.</li>
+                                <li>Developed neural network models for market segmentation to improve customer
+                                    targeting.</li>
+                                <li>Built unsupervised models (KMeans, Agglomerative Clustering) for personalized
+                                    marketing strategies.</li>
+                                <li>Classified disaster-related tweets using NLP techniques (Word2Vec, GloVe, TF-IDF).
+                                </li>
+                                <li>Automated machine learning workflows using PyCaret, improving deployment efficiency.
+                                </li>
+                                <li>Performed exploratory data analysis (EDA) on Airbnb listings to extract actionable
+                                    insights.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2023 – Oct 2023</div>
+                        <div class="timeline-content">
+                            <h3>Data Science Intern</h3>
+                            <h4>TechnoHacks EduTech (Nashik, India)</h4>
+                            <ul>
+                                <li>Developed ML models for email spam detection using Scikit-learn and NLP techniques
+                                    (TF-IDF, CountVectorizer).</li>
+                                <li>Analyzed sentiment in social media posts using NLTK and spaCy to extract audience
+                                    insights.</li>
+                                <li>Built predictive models to forecast employee turnover and optimize retention
+                                    strategies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="num">04.</span> Featured Projects</h2>
+
+
+
+
+                <!-- Machine Learning -->
+                <h3 class="category-title"><i class="fas fa-folder"></i> Machine Learning <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <!-- ML Projects -->
+                    <div class="project-card" data-category="ml">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Heart%20Diseases"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Heart Disease Prediction</h3>
+                        <p class="description">Applied ensemble ML models with preprocessing to improve prediction
+                            accuracy for heart disease.</p>
+                        <ul class="tech-list">
+                            <li>Ensemble ML</li>
+                            <li>Preprocessing</li>
+                            <li>Healthcare</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="ml">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Advanced%20Data%20Analytics%20AirLine%20Passenger%20Satisfaction"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Airline Passenger Satisfaction</h3>
+                        <p class="description">Predicted passenger satisfaction using classification models with feature
+                            engineering, and visualized insights with Power BI.</p>
+                        <ul class="tech-list">
+                            <li>Classification</li>
+                            <li>Feature Eng</li>
+                            <li>Power BI</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="ml">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Liver%20Disease%20Prediction"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Liver Disease Prediction</h3>
+                        <p class="description">Developed ML models to predict liver disease from patient records,
+                            enabling early detection.</p>
+                        <ul class="tech-list">
+                            <li>ML</li>
+                            <li>Healthcare</li>
+                            <li>Prediction</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="ml">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Prostate%20Cancer%20Risk%20Prediction%20Using%20Lifestyle%20and%20Health%20Indicators"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Prostate Cancer Risk</h3>
+                        <p class="description">Built a classifier to assess prostate cancer risk using lifestyle and
+                            medical indicators; visualized insights with Power BI.</p>
+                        <ul class="tech-list">
+                            <li>Classifier</li>
+                            <li>Power BI</li>
+                            <li>Medical</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/ML-Projects" target="_blank"
+                        class="view-more-link">View More Machine Learning Projects <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Deep Learning -->
+                <h3 class="category-title"><i class="fas fa-network-wired"></i> Deep Learning <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <!-- DL Projects -->
+                    <div class="project-card" data-category="dl">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Brain%20Tumors"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Brain Tumor Detection</h3>
+                        <p class="description">Trained a CNN to detect brain tumors from MRI scans, aiding in early
+                            diagnosis.</p>
+                        <ul class="tech-list">
+                            <li>CNN</li>
+                            <li>MRI</li>
+                            <li>Medical Imaging</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="dl">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Chest%20X-Ray%20Images%20(Pneumonia)"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Pneumonia Classification</h3>
+                        <p class="description">Deep learning model for classifying pneumonia from chest X-Ray images
+                            with high accuracy.</p>
+                        <ul class="tech-list">
+                            <li>Deep Learning</li>
+                            <li>X-Ray Analysis</li>
+                            <li>Classification</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="dl">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Speech%20Recognition"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Speech Recognition System</h3>
+                        <p class="description">Built a DL-based speech-to-text system with noise handling and real-time
+                            inference.</p>
+                        <ul class="tech-list">
+                            <li>DL</li>
+                            <li>Audio Processing</li>
+                            <li>Real-time</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="dl">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Elpv%20Classification"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Elpv Classification</h3>
+                        <p class="description">Quality evaluation of solar cells (electroluminescence images) using
+                            image analysis techniques.</p>
+                        <ul class="tech-list">
+                            <li>Image Analysis</li>
+                            <li>Quality Control</li>
+                            <li>DL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/DL-Projects" target="_blank"
+                        class="view-more-link">View More Deep Learning Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Computer Vision -->
+                <h3 class="category-title"><i class="fas fa-eye"></i> Computer Vision <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <!-- CV Projects -->
+                    <div class="project-card" data-category="cv">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/Bone%20Fracture%20Classification%20Using%20Mobilevit"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Bone Fracture Classification</h3>
+                        <p class="description">Built a MobileViT Transformer model to classify bone fractures from X-ray
+                            images, improving diagnostic efficiency.</p>
+                        <ul class="tech-list">
+                            <li>MobileViT</li>
+                            <li>Transformer</li>
+                            <li>X-Ray</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="cv">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/ASL%20Detection%20%26%20Real%20Time"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>ASL Detection</h3>
+                        <p class="description">Used CycleGAN to generate synthetic ASL data and trained a model for
+                            real-time sign recognition.</p>
+                        <ul class="tech-list">
+                            <li>CycleGAN</li>
+                            <li>Real-time</li>
+                            <li>Sign Language</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="cv">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/CT%20Heart%20Segmentation%20Using%20UNet"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>CT Heart Segmentation</h3>
+                        <p class="description">Implemented U-Net architecture for precise segmentation of heart
+                            structures in CT scans.</p>
+                        <ul class="tech-list">
+                            <li>U-Net</li>
+                            <li>Segmentation</li>
+                            <li>Medical Imaging</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="cv">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/%F0%9F%A9%B8Retina%20Blood%20Vessel%20Segmentation%20using%20U-Net%F0%9F%A7%A0%F0%9F%93%88"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Retina Vessel Segmentation</h3>
+                        <p class="description">Automatic segmentation of blood vessels in retinal images using U-Net for
+                            opthalmologic diagnosis.</p>
+                        <ul class="tech-list">
+                            <li>U-Net</li>
+                            <li>Retina Analysis</li>
+                            <li>Segmentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/CV-Projects" target="_blank"
+                        class="view-more-link">View More Computer Vision Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Natural Language Processing -->
+                <h3 class="category-title"><i class="fas fa-comments"></i> Natural Language Processing <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <!-- NLP Projects -->
+                    <div class="project-card" data-category="nlp">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Language%20Detection"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Language Detection</h3>
+                        <p class="description">Built an NLP classifier to identify the language of given text samples
+                            with high precision.</p>
+                        <ul class="tech-list">
+                            <li>NLP</li>
+                            <li>Text Classification</li>
+                            <li>Identification</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="nlp">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Arabic%20Sentiment%20Reviews"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Arabic Sentiment Analysis</h3>
+                        <p class="description">Fine-tuned BERT and trained LSTM to analyze sentiment in Arabic reviews.
+                        </p>
+                        <ul class="tech-list">
+                            <li>BERT</li>
+                            <li>LSTM</li>
+                            <li>Arabic NLP</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="nlp">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Paraphrase%20Classification%20and%20Generation%20Using%20Transformers"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Paraphrase Classification</h3>
+                        <p class="description">Used XLNet for paraphrase detection and T5 for generating paraphrases
+                            with varied structure.</p>
+                        <ul class="tech-list">
+                            <li>XLNet</li>
+                            <li>T5</li>
+                            <li>Generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="nlp">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Text%20Classification%20Using%20Longformer-FineTuning"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Longformer Classification</h3>
+                        <p class="description">Fine-tuned Longformer model for text classification tasks involving long
+                            documents.</p>
+                        <ul class="tech-list">
+                            <li>Longformer</li>
+                            <li>Fine-tuning</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="nlp">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Amazon%20Reviews"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Amazon Reviews Analysis</h3>
+                        <p class="description">Deep learning based sentimental analysis on large-scale Amazon dataset.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Deep Learning</li>
+                            <li>Sentiment</li>
+                            <li>Big Data</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/NLP-Projects" target="_blank"
+                        class="view-more-link">View More NLP Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- AutoEncoders Analysis -->
+                <h3 class="category-title"><i class="fas fa-compress-arrows-alt"></i> AutoEncoders <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="autoencoder">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Cifar10%20Image%20Colorization"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Cifar10 Image Colorization</h3>
+                        <p class="description">AutoEncoder-based model to colorize grayscale images from the Cifar10
+                            dataset.</p>
+                        <ul class="tech-list">
+                            <li>AutoEncoder</li>
+                            <li>Image Processing</li>
+                            <li>Colorization</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="autoencoder">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Visualize%20Mnist"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Visualize Mnist</h3>
+                        <p class="description">Dimensionality reduction and visualization of the MNIST dataset using
+                            AutoEncoders.</p>
+                        <ul class="tech-list">
+                            <li>AutoEncoder</li>
+                            <li>Visualization</li>
+                            <li>MNIST</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects" target="_blank"
+                        class="view-more-link">View More AutoEncoder Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- GAN Projects -->
+                <h3 class="category-title"><i class="fas fa-clone"></i> GANs <i class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="gan">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/Cycle%20GAN%20For%20ASL"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Cycle GAN For ASL</h3>
+                        <p class="description">Generating synthetic American Sign Language gestures using CycleGAN for
+                            data augmentation.</p>
+                        <ul class="tech-list">
+                            <li>CycleGAN</li>
+                            <li>Data Augmentation</li>
+                            <li>ASL</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="gan">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/DCGAN%20For%20Fashion%20Minst"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>DCGAN For Fashion Minst</h3>
+                        <p class="description">Generating realistic fashion items using Deep Convolutional GANs trained
+                            on Fashion MNIST.</p>
+                        <ul class="tech-list">
+                            <li>DCGAN</li>
+                            <li>Image Generation</li>
+                            <li>Fashion MNIST</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/GAN-Projects" target="_blank"
+                        class="view-more-link">View More GAN Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- GenAI Projects -->
+                <h3 class="category-title"><i class="fas fa-robot"></i> Generative AI <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="genai">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Doc%20QA%20ChromaDB"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>LLAMA 3.1 RAG Doc QA</h3>
+                        <p class="description">Document Question-Answering system using Llama 3.1, RAG, and ChromaDB.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Llama 3.1</li>
+                            <li>RAG</li>
+                            <li>ChromaDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="genai">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Multi%20Doc%20QA%20Streamlit"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Multi-Doc RAG with Streamlit</h3>
+                        <p class="description">Interactive interface for querying multiple documents using RAG and Llama
+                            3.1.</p>
+                        <ul class="tech-list">
+                            <li>RAG</li>
+                            <li>Streamlit</li>
+                            <li>Llama 3.1</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="genai">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/Document%20Summarizer%20with%20LlamaIndex%20%26%20Llama%203"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Document Summarizer</h3>
+                        <p class="description">Automated document summarization tool powered by LlamaIndex and Llama 3.
+                        </p>
+                        <ul class="tech-list">
+                            <li>LlamaIndex</li>
+                            <li>Llama 3</li>
+                            <li>Summarization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects" target="_blank"
+                        class="view-more-link">View More Generative AI Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- PowerBI Projects -->
+                <h3 class="category-title"><i class="fas fa-chart-bar"></i> PowerBI Analysis <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="powerbi">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Airline%20Passenger%20Satisfaction%20Report"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Airline Passenger Report</h3>
+                        <p class="description">Comprehensive Power BI dashboard analyzing passenger satisfaction
+                            metrics.</p>
+                        <ul class="tech-list">
+                            <li>Power BI</li>
+                            <li>Data Viz</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="powerbi">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Healthcare%20provider%20Dashboard"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Healthcare Dashboard</h3>
+                        <p class="description">Interactive dashboard for healthcare providers to track key performance
+                            indicators.</p>
+                        <ul class="tech-list">
+                            <li>Power BI</li>
+                            <li>Healthcare</li>
+                            <li>Dashboard</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" data-category="powerbi">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/The%20AI%2C%20ML%2C%20Data%20Science%20Salary%20Analysis"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>AI/ML Salary Analysis</h3>
+                        <p class="description">Visual analysis of salary trends in AI, ML, and Data Science across
+                            different regions.</p>
+                        <ul class="tech-list">
+                            <li>Power BI</li>
+                            <li>Salary Data</li>
+                            <li>Trends</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/PowerBI-Projects" target="_blank"
+                        class="view-more-link">View More PowerBI Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Graduation Project -->
+                <h3 class="category-title"><i class="fas fa-graduation-cap"></i> Graduation Project <i
+                        class="fas fa-chevron-down"></i></h3>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="graduation">
+                        <div class="project-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="https://github.com/ahmedashraf792002/Leader-Graduation-Project"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Alzheimer’s Detection with GenerativeAI</h3>
+                        <p class="description">Innovative solution using AI and Generative technologies for early
+                            detection of Alzheimer's symptoms, improving treatment opportunities.</p>
+                        <ul class="tech-list">
+                            <li>GenerativeAI</li>
+                            <li>Deep Learning</li>
+                            <li>Healthcare</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="view-more-wrapper">
+                    <a href="https://github.com/ahmedashraf792002/Leader-Graduation-Project" target="_blank"
+                        class="view-more-link">View More Graduation Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Achievements & Publications -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-title"><span class="num">05.</span> Achievements & Publications</h2>
+                <div class="achievements-container">
+                    <div class="achievement-card">
+                        <h3><i class="fas fa-trophy"></i> Kaggle Expert</h3>
+                        <p>Recognized for active participation in competitions, high-quality notebooks, and
+                            contributions to the data science community.</p>
+                    </div>
+                    <div class="publication-card">
+                        <h3><i class="fas fa-book"></i> Publications</h3>
+                        <ul class="pub-list">
+                            <li>
+                                <strong>Explainable ML for Liver Disease Detection</strong> (IEEE, Oct 2024)<br>
+                                <span>Integrated SHAP, LIME, and Anchors to improve interpretability in diagnosing FLD
+                                    and HBV.</span>
+                            </li>
+                            <li>
+                                <strong>ML-Based Anomaly Detection in Healthcare</strong> (IEEE, Oct 2024)<br>
+                                <span>Survey of ML techniques (e.g., autoencoders, XGBoost) for detecting anomalies in
+                                    healthcare IoT and WSNs.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-wrapper">
+                <div class="contact-content-left">
+                    <p class="section-subtitle">Get In Touch</p>
+                    <h2 class="section-title-main">Let's Work Together</h2>
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities in AI, Machine Learning, and Data Science.
+                        Whether you have a specific project or just want to say hi, my inbox is always open!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Shebin Al-Qanater, Al-Qalyubia, Egypt</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 1097436928</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ahmedashraf390@gmail.com">ahmedashraf390@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links-big">
+                        <a href="https://github.com/ahmedashraf792002" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/ahmed-ashraf-59a207234" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://kaggle.com/ahmedashrafahmed" target="_blank"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-action-right">
+                    <div class="cta-box">
+                        <h3>Interested in collaboration?</h3>
+                        <p>Let's turn your ideas into reality with cutting-edge AI solutions.</p>
+                        <a href="mailto:ahmedashraf390@gmail.com" class="btn btn-primary big-btn">Say Hello <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Ahmed Ashraf</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
