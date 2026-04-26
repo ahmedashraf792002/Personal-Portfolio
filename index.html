@@ -53,24 +53,49 @@
         <section id="hero" class="hero-section">
             <canvas id="neural-canvas"></canvas>
             <div class="hero-content">
-                <p class="greeting">Hello, I'm</p>
+                <div class="hero-badges">
+                    <span class="hero-badge"><i class="fas fa-brain"></i> AI Engineer</span>
+                    <span class="hero-badge"><i class="fas fa-robot"></i> LLM Specialist</span>
+                    <span class="hero-badge available"><span class="badge-dot"></span> Open to Work</span>
+                </div>
+                <p class="greeting">// Hello, World! I'm</p>
                 <h1 class="name">Ahmed Ashraf</h1>
-                <h2 class="role">AI & Machine Learning Engineer</h2>
+                <h2 class="role">AI &amp; Machine Learning Engineer</h2>
                 <div class="typewriter">
-                    <span id="typing-text"></span><span class="cursor">|</span>
+                    <span class="typewriter-prefix">specializing in </span><span id="typing-text"></span><span class="cursor">|</span>
                 </div>
                 <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">30+</span>
+                        <span class="stat-label">AI Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">IEEE Papers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">3.76</span>
+                        <span class="stat-label">GPA / 4.0</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">Expert</span>
+                        <span class="stat-label">Kaggle Rank</span>
+                    </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/ahmedashraf792002" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/ahmed-ashraf-59a207234" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://kaggle.com/ahmedashrafahmed" target="_blank"><i class="fab fa-kaggle"></i></a>
-                    <a href="mailto:ahmedashraf390@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/ahmedashraf792002" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ahmed-ashraf-59a207234" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://kaggle.com/ahmedashrafahmed" target="_blank" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    <a href="mailto:ahmedashraf390@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="contact-mini" style="margin-top: 20px; color: var(--text-secondary); font-size: 0.9rem;">
+                <div class="contact-mini">
                     <p><i class="fas fa-map-marker-alt"></i> Shebin Al-Qanater, Al-Qalyubia, Egypt</p>
                     <p><i class="fas fa-phone"></i> +20 1097436928</p>
                 </div>
@@ -78,6 +103,7 @@
             <div class="hero-image">
                 <div class="img-wrapper">
                     <img src="assets/profile.png" alt="Ahmed Ashraf">
+                    <div class="img-ai-label"><i class="fas fa-microchip"></i> AI Engineer</div>
                 </div>
             </div>
             <a href="#about" class="scroll-down">
@@ -244,80 +270,67 @@
 
 
                 <!-- Machine Learning -->
-                <h3 class="category-title"><i class="fas fa-folder"></i> Machine Learning <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-folder"></i></div>
+                    <span class="cat-label">Machine Learning</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <!-- ML Projects -->
+                    <!-- Heart Disease -->
                     <div class="project-card" data-category="ml">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Heart%20Diseases"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-heartbeat"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Heart%20Diseases" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Heart Disease Prediction</h3>
-                        <p class="description">Applied ensemble ML models with preprocessing to improve prediction
-                            accuracy for heart disease.</p>
-                        <ul class="tech-list">
-                            <li>Ensemble ML</li>
-                            <li>Preprocessing</li>
-                            <li>Healthcare</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Machine Learning</span>
+                            <h3>Heart Disease Prediction</h3>
+                            <p class="description">Ensemble ML models with advanced preprocessing pipelines to improve prediction accuracy for heart disease risk assessment.</p>
+                            <ul class="tech-list"><li>Ensemble ML</li><li>Preprocessing</li><li>Healthcare</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Airline -->
                     <div class="project-card" data-category="ml">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Advanced%20Data%20Analytics%20AirLine%20Passenger%20Satisfaction"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-plane"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Advanced%20Data%20Analytics%20AirLine%20Passenger%20Satisfaction" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Airline Passenger Satisfaction</h3>
-                        <p class="description">Predicted passenger satisfaction using classification models with feature
-                            engineering, and visualized insights with Power BI.</p>
-                        <ul class="tech-list">
-                            <li>Classification</li>
-                            <li>Feature Eng</li>
-                            <li>Power BI</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Machine Learning</span>
+                            <h3>Airline Passenger Satisfaction</h3>
+                            <p class="description">Predicted passenger satisfaction using classification with feature engineering, visualized with Power BI dashboards.</p>
+                            <ul class="tech-list"><li>Classification</li><li>Feature Eng</li><li>Power BI</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Liver Disease -->
                     <div class="project-card" data-category="ml">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Liver%20Disease%20Prediction"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-notes-medical"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Liver%20Disease%20Prediction" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Liver Disease Prediction</h3>
-                        <p class="description">Developed ML models to predict liver disease from patient records,
-                            enabling early detection.</p>
-                        <ul class="tech-list">
-                            <li>ML</li>
-                            <li>Healthcare</li>
-                            <li>Prediction</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Machine Learning</span>
+                            <h3>Liver Disease Prediction</h3>
+                            <p class="description">ML models to predict liver disease from patient records, enabling early and accurate clinical detection.</p>
+                            <ul class="tech-list"><li>ML</li><li>Healthcare</li><li>Prediction</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Prostate Cancer -->
                     <div class="project-card" data-category="ml">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Prostate%20Cancer%20Risk%20Prediction%20Using%20Lifestyle%20and%20Health%20Indicators"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-dna"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/ML-Projects/tree/main/Prostate%20Cancer%20Risk%20Prediction%20Using%20Lifestyle%20and%20Health%20Indicators" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Prostate Cancer Risk</h3>
-                        <p class="description">Built a classifier to assess prostate cancer risk using lifestyle and
-                            medical indicators; visualized insights with Power BI.</p>
-                        <ul class="tech-list">
-                            <li>Classifier</li>
-                            <li>Power BI</li>
-                            <li>Medical</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Machine Learning</span>
+                            <h3>Prostate Cancer Risk</h3>
+                            <p class="description">Classifier for prostate cancer risk from lifestyle and medical indicators with Power BI visualizations for clinical insight.</p>
+                            <ul class="tech-list"><li>Classifier</li><li>Power BI</li><li>Medical</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -327,80 +340,67 @@
                 </div>
 
                 <!-- Deep Learning -->
-                <h3 class="category-title"><i class="fas fa-network-wired"></i> Deep Learning <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-network-wired"></i></div>
+                    <span class="cat-label">Deep Learning</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <!-- DL Projects -->
+                    <!-- Brain Tumor -->
                     <div class="project-card" data-category="dl">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Brain%20Tumors"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-brain"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Brain%20Tumors" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Brain Tumor Detection</h3>
-                        <p class="description">Trained a CNN to detect brain tumors from MRI scans, aiding in early
-                            diagnosis.</p>
-                        <ul class="tech-list">
-                            <li>CNN</li>
-                            <li>MRI</li>
-                            <li>Medical Imaging</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Deep Learning</span>
+                            <h3>Brain Tumor Detection</h3>
+                            <p class="description">CNN to classify brain tumors from MRI scans with high accuracy, aiding early and reliable medical diagnosis.</p>
+                            <ul class="tech-list"><li>CNN</li><li>MRI</li><li>Medical Imaging</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Pneumonia -->
                     <div class="project-card" data-category="dl">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Chest%20X-Ray%20Images%20(Pneumonia)"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-lungs"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Chest%20X-Ray%20Images%20(Pneumonia)" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Pneumonia Classification</h3>
-                        <p class="description">Deep learning model for classifying pneumonia from chest X-Ray images
-                            with high accuracy.</p>
-                        <ul class="tech-list">
-                            <li>Deep Learning</li>
-                            <li>X-Ray Analysis</li>
-                            <li>Classification</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Deep Learning</span>
+                            <h3>Pneumonia Classification</h3>
+                            <p class="description">Deep learning model classifying pneumonia from chest X-Ray images with high diagnostic accuracy using transfer learning.</p>
+                            <ul class="tech-list"><li>Deep Learning</li><li>X-Ray</li><li>Classification</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Speech -->
                     <div class="project-card" data-category="dl">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Speech%20Recognition"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-microphone-alt"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Speech%20Recognition" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Speech Recognition System</h3>
-                        <p class="description">Built a DL-based speech-to-text system with noise handling and real-time
-                            inference.</p>
-                        <ul class="tech-list">
-                            <li>DL</li>
-                            <li>Audio Processing</li>
-                            <li>Real-time</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Deep Learning</span>
+                            <h3>Speech Recognition System</h3>
+                            <p class="description">DL-based speech-to-text pipeline with robust noise handling and optimized real-time inference performance.</p>
+                            <ul class="tech-list"><li>DL</li><li>Audio Processing</li><li>Real-time</li></ul>
+                        </div>
                     </div>
 
+                    <!-- Elpv -->
                     <div class="project-card" data-category="dl">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Elpv%20Classification"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-solar-panel"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Elpv%20Classification" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Elpv Classification</h3>
-                        <p class="description">Quality evaluation of solar cells (electroluminescence images) using
-                            image analysis techniques.</p>
-                        <ul class="tech-list">
-                            <li>Image Analysis</li>
-                            <li>Quality Control</li>
-                            <li>DL</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Deep Learning</span>
+                            <h3>Elpv Classification</h3>
+                            <p class="description">Quality evaluation of solar cells from electroluminescence images using deep learning image analysis.</p>
+                            <ul class="tech-list"><li>Image Analysis</li><li>Quality Control</li><li>DL</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -409,80 +409,63 @@
                 </div>
 
                 <!-- Computer Vision -->
-                <h3 class="category-title"><i class="fas fa-eye"></i> Computer Vision <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-eye"></i></div>
+                    <span class="cat-label">Computer Vision</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <!-- CV Projects -->
                     <div class="project-card" data-category="cv">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/Bone%20Fracture%20Classification%20Using%20Mobilevit"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-bone"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/Bone%20Fracture%20Classification%20Using%20Mobilevit" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Bone Fracture Classification</h3>
-                        <p class="description">Built a MobileViT Transformer model to classify bone fractures from X-ray
-                            images, improving diagnostic efficiency.</p>
-                        <ul class="tech-list">
-                            <li>MobileViT</li>
-                            <li>Transformer</li>
-                            <li>X-Ray</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Computer Vision</span>
+                            <h3>Bone Fracture Classification</h3>
+                            <p class="description">Built a MobileViT Transformer model to classify bone fractures from X-ray images, improving diagnostic efficiency.</p>
+                            <ul class="tech-list"><li>MobileViT</li><li>Transformer</li><li>X-Ray</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="cv">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/ASL%20Detection%20%26%20Real%20Time"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-sign-language"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/CV-Projects/tree/main/ASL%20Detection%20%26%20Real%20Time" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>ASL Detection</h3>
-                        <p class="description">Used CycleGAN to generate synthetic ASL data and trained a model for
-                            real-time sign recognition.</p>
-                        <ul class="tech-list">
-                            <li>CycleGAN</li>
-                            <li>Real-time</li>
-                            <li>Sign Language</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Computer Vision</span>
+                            <h3>ASL Detection</h3>
+                            <p class="description">Used CycleGAN to generate synthetic ASL data and trained a model for real-time sign recognition.</p>
+                            <ul class="tech-list"><li>CycleGAN</li><li>Real-time</li><li>Sign Language</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="cv">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/CT%20Heart%20Segmentation%20Using%20UNet"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-heart"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/CT%20Heart%20Segmentation%20Using%20UNet" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>CT Heart Segmentation</h3>
-                        <p class="description">Implemented U-Net architecture for precise segmentation of heart
-                            structures in CT scans.</p>
-                        <ul class="tech-list">
-                            <li>U-Net</li>
-                            <li>Segmentation</li>
-                            <li>Medical Imaging</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Computer Vision</span>
+                            <h3>CT Heart Segmentation</h3>
+                            <p class="description">Implemented U-Net architecture for precise segmentation of heart structures in CT scans.</p>
+                            <ul class="tech-list"><li>U-Net</li><li>Segmentation</li><li>Medical Imaging</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="cv">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/%F0%9F%A9%B8Retina%20Blood%20Vessel%20Segmentation%20using%20U-Net%F0%9F%A7%A0%F0%9F%93%88"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-eye"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/%F0%9F%A9%B8Retina%20Blood%20Vessel%20Segmentation%20using%20U-Net%F0%9F%A7%A0%F0%9F%93%88" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Retina Vessel Segmentation</h3>
-                        <p class="description">Automatic segmentation of blood vessels in retinal images using U-Net for
-                            opthalmologic diagnosis.</p>
-                        <ul class="tech-list">
-                            <li>U-Net</li>
-                            <li>Retina Analysis</li>
-                            <li>Segmentation</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Computer Vision</span>
+                            <h3>Retina Vessel Segmentation</h3>
+                            <p class="description">Automatic segmentation of blood vessels in retinal images using U-Net for opthalmologic diagnosis.</p>
+                            <ul class="tech-list"><li>U-Net</li><li>Retina Analysis</li><li>Segmentation</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -490,98 +473,76 @@
                         class="view-more-link">View More Computer Vision Projects <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <!-- Natural Language Processing -->
-                <h3 class="category-title"><i class="fas fa-comments"></i> Natural Language Processing <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-comments"></i></div>
+                    <span class="cat-label">Natural Language Processing</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <!-- NLP Projects -->
                     <div class="project-card" data-category="nlp">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Language%20Detection"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-language"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Language%20Detection" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Language Detection</h3>
-                        <p class="description">Built an NLP classifier to identify the language of given text samples
-                            with high precision.</p>
-                        <ul class="tech-list">
-                            <li>NLP</li>
-                            <li>Text Classification</li>
-                            <li>Identification</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">NLP</span>
+                            <h3>Language Detection</h3>
+                            <p class="description">Built an NLP classifier to identify the language of given text samples with high precision.</p>
+                            <ul class="tech-list"><li>NLP</li><li>Text Classification</li><li>Identification</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="nlp">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Arabic%20Sentiment%20Reviews"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-smile"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Arabic%20Sentiment%20Reviews" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Arabic Sentiment Analysis</h3>
-                        <p class="description">Fine-tuned BERT and trained LSTM to analyze sentiment in Arabic reviews.
-                        </p>
-                        <ul class="tech-list">
-                            <li>BERT</li>
-                            <li>LSTM</li>
-                            <li>Arabic NLP</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">NLP</span>
+                            <h3>Arabic Sentiment Analysis</h3>
+                            <p class="description">Fine-tuned BERT and trained LSTM to analyze sentiment in Arabic reviews.</p>
+                            <ul class="tech-list"><li>BERT</li><li>LSTM</li><li>Arabic NLP</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="nlp">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Paraphrase%20Classification%20and%20Generation%20Using%20Transformers"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-copy"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Paraphrase%20Classification%20and%20Generation%20Using%20Transformers" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Paraphrase Classification</h3>
-                        <p class="description">Used XLNet for paraphrase detection and T5 for generating paraphrases
-                            with varied structure.</p>
-                        <ul class="tech-list">
-                            <li>XLNet</li>
-                            <li>T5</li>
-                            <li>Generation</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">NLP</span>
+                            <h3>Paraphrase Classification</h3>
+                            <p class="description">Used XLNet for paraphrase detection and T5 for generating paraphrases with varied structure.</p>
+                            <ul class="tech-list"><li>XLNet</li><li>T5</li><li>Generation</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="nlp">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Text%20Classification%20Using%20Longformer-FineTuning"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-file-alt"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/NLP-Projects/tree/main/Text%20Classification%20Using%20Longformer-FineTuning" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Longformer Classification</h3>
-                        <p class="description">Fine-tuned Longformer model for text classification tasks involving long
-                            documents.</p>
-                        <ul class="tech-list">
-                            <li>Longformer</li>
-                            <li>Fine-tuning</li>
-                            <li>NLP</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">NLP</span>
+                            <h3>Longformer Classification</h3>
+                            <p class="description">Fine-tuned Longformer model for text classification tasks involving long documents.</p>
+                            <ul class="tech-list"><li>Longformer</li><li>Fine-tuning</li><li>NLP</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="nlp">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Amazon%20Reviews"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/DL-Projects/tree/main/Amazon%20Reviews" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Amazon Reviews Analysis</h3>
-                        <p class="description">Deep learning based sentimental analysis on large-scale Amazon dataset.
-                        </p>
-                        <ul class="tech-list">
-                            <li>Deep Learning</li>
-                            <li>Sentiment</li>
-                            <li>Big Data</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">NLP</span>
+                            <h3>Amazon Reviews Analysis</h3>
+                            <p class="description">Deep learning based sentimental analysis on large-scale Amazon dataset.</p>
+                            <ul class="tech-list"><li>Deep Learning</li><li>Sentiment</li><li>Big Data</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -590,43 +551,36 @@
                 </div>
 
                 <!-- AutoEncoders Analysis -->
-                <h3 class="category-title"><i class="fas fa-compress-arrows-alt"></i> AutoEncoders <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-compress-arrows-alt"></i></div>
+                    <span class="cat-label">AutoEncoders</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <div class="project-card" data-category="autoencoder">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Cifar10%20Image%20Colorization"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-palette"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Cifar10%20Image%20Colorization" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Cifar10 Image Colorization</h3>
-                        <p class="description">AutoEncoder-based model to colorize grayscale images from the Cifar10
-                            dataset.</p>
-                        <ul class="tech-list">
-                            <li>AutoEncoder</li>
-                            <li>Image Processing</li>
-                            <li>Colorization</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">AutoEncoder</span>
+                            <h3>Cifar10 Image Colorization</h3>
+                            <p class="description">AutoEncoder-based model to colorize grayscale images from the Cifar10 dataset.</p>
+                            <ul class="tech-list"><li>AutoEncoder</li><li>Image Processing</li><li>Colorization</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="autoencoder">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Visualize%20Mnist"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-project-diagram"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/AutoEncoder-Projects/tree/main/Visualize%20Mnist" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Visualize Mnist</h3>
-                        <p class="description">Dimensionality reduction and visualization of the MNIST dataset using
-                            AutoEncoders.</p>
-                        <ul class="tech-list">
-                            <li>AutoEncoder</li>
-                            <li>Visualization</li>
-                            <li>MNIST</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">AutoEncoder</span>
+                            <h3>Visualize Mnist</h3>
+                            <p class="description">Dimensionality reduction and visualization of the MNIST dataset using AutoEncoders.</p>
+                            <ul class="tech-list"><li>AutoEncoder</li><li>Visualization</li><li>MNIST</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -634,43 +588,37 @@
                         class="view-more-link">View More AutoEncoder Projects <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <!-- GAN Projects -->
-                <h3 class="category-title"><i class="fas fa-clone"></i> GANs <i class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <!-- GANs Projects -->
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-clone"></i></div>
+                    <span class="cat-label">Generative Adversarial Networks (GANs)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <div class="project-card" data-category="gan">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/Cycle%20GAN%20For%20ASL"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-hands-helping"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/Cycle%20GAN%20For%20ASL" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Cycle GAN For ASL</h3>
-                        <p class="description">Generating synthetic American Sign Language gestures using CycleGAN for
-                            data augmentation.</p>
-                        <ul class="tech-list">
-                            <li>CycleGAN</li>
-                            <li>Data Augmentation</li>
-                            <li>ASL</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">GAN</span>
+                            <h3>Cycle GAN For ASL</h3>
+                            <p class="description">Generating synthetic American Sign Language gestures using CycleGAN for data augmentation.</p>
+                            <ul class="tech-list"><li>CycleGAN</li><li>Data Augmentation</li><li>ASL</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="gan">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/DCGAN%20For%20Fashion%20Minst"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-tshirt"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/GAN-Projects/tree/main/DCGAN%20For%20Fashion%20Minst" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>DCGAN For Fashion Minst</h3>
-                        <p class="description">Generating realistic fashion items using Deep Convolutional GANs trained
-                            on Fashion MNIST.</p>
-                        <ul class="tech-list">
-                            <li>DCGAN</li>
-                            <li>Image Generation</li>
-                            <li>Fashion MNIST</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">GAN</span>
+                            <h3>DCGAN For Fashion Minst</h3>
+                            <p class="description">Generating realistic fashion items using Deep Convolutional GANs trained on Fashion MNIST.</p>
+                            <ul class="tech-list"><li>DCGAN</li><li>Image Generation</li><li>Fashion MNIST</li></ul>
+                        </div>
                     </div>
                 </div>
                 <div class="view-more-wrapper">
@@ -679,61 +627,49 @@
                 </div>
 
                 <!-- GenAI Projects -->
-                <h3 class="category-title"><i class="fas fa-robot"></i> Generative AI <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-robot"></i></div>
+                    <span class="cat-label">Generative AI</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <div class="project-card" data-category="genai">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Doc%20QA%20ChromaDB"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-robot"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Doc%20QA%20ChromaDB" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>LLAMA 3.1 RAG Doc QA</h3>
-                        <p class="description">Document Question-Answering system using Llama 3.1, RAG, and ChromaDB.
-                        </p>
-                        <ul class="tech-list">
-                            <li>Llama 3.1</li>
-                            <li>RAG</li>
-                            <li>ChromaDB</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge badge-genai">Generative AI</span>
+                            <h3>LLAMA 3.1 RAG Doc QA</h3>
+                            <p class="description">Document Question-Answering system using Llama 3.1, Retrieval-Augmented Generation (RAG), and ChromaDB vector store.</p>
+                            <ul class="tech-list"><li>Llama 3.1</li><li>RAG</li><li>ChromaDB</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="genai">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Multi%20Doc%20QA%20Streamlit"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-layer-group"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/LLAMA_3_1%20%20RAG%20Multi%20Doc%20QA%20Streamlit" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Multi-Doc RAG with Streamlit</h3>
-                        <p class="description">Interactive interface for querying multiple documents using RAG and Llama
-                            3.1.</p>
-                        <ul class="tech-list">
-                            <li>RAG</li>
-                            <li>Streamlit</li>
-                            <li>Llama 3.1</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge badge-genai">Generative AI</span>
+                            <h3>Multi-Doc RAG with Streamlit</h3>
+                            <p class="description">Interactive interface for querying multiple documents using RAG and Llama 3.1.</p>
+                            <ul class="tech-list"><li>RAG</li><li>Streamlit</li><li>Llama 3.1</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="genai">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/Document%20Summarizer%20with%20LlamaIndex%20%26%20Llama%203"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-file-contract"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/Generative-AI-Projects/tree/main/Document%20Summarizer%20with%20LlamaIndex%20%26%20Llama%203" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Document Summarizer</h3>
-                        <p class="description">Automated document summarization tool powered by LlamaIndex and Llama 3.
-                        </p>
-                        <ul class="tech-list">
-                            <li>LlamaIndex</li>
-                            <li>Llama 3</li>
-                            <li>Summarization</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge badge-genai">Generative AI</span>
+                            <h3>Document Summarizer</h3>
+                            <p class="description">Automated document summarization tool powered by LlamaIndex and Llama 3.</p>
+                            <ul class="tech-list"><li>LlamaIndex</li><li>Llama 3</li><li>Summarization</li></ul>
+                        </div>
                     </div>
                 </div>
 
@@ -743,61 +679,49 @@
                 </div>
 
                 <!-- PowerBI Projects -->
-                <h3 class="category-title"><i class="fas fa-chart-bar"></i> PowerBI Analysis <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-chart-bar"></i></div>
+                    <span class="cat-label">PowerBI Analysis</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <div class="project-card" data-category="powerbi">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Airline%20Passenger%20Satisfaction%20Report"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-plane-departure"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Airline%20Passenger%20Satisfaction%20Report" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Airline Passenger Report</h3>
-                        <p class="description">Comprehensive Power BI dashboard analyzing passenger satisfaction
-                            metrics.</p>
-                        <ul class="tech-list">
-                            <li>Power BI</li>
-                            <li>Data Viz</li>
-                            <li>Analytics</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">PowerBI</span>
+                            <h3>Airline Passenger Report</h3>
+                            <p class="description">Comprehensive Power BI dashboard analyzing passenger satisfaction metrics.</p>
+                            <ul class="tech-list"><li>Power BI</li><li>Data Viz</li><li>Analytics</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="powerbi">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Healthcare%20provider%20Dashboard"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-heartbeat"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/Healthcare%20provider%20Dashboard" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Healthcare Dashboard</h3>
-                        <p class="description">Interactive dashboard for healthcare providers to track key performance
-                            indicators.</p>
-                        <ul class="tech-list">
-                            <li>Power BI</li>
-                            <li>Healthcare</li>
-                            <li>Dashboard</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">PowerBI</span>
+                            <h3>Healthcare Dashboard</h3>
+                            <p class="description">Interactive dashboard for healthcare providers to track key performance indicators.</p>
+                            <ul class="tech-list"><li>Power BI</li><li>Healthcare</li><li>Dashboard</li></ul>
+                        </div>
                     </div>
 
                     <div class="project-card" data-category="powerbi">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/The%20AI%2C%20ML%2C%20Data%20Science%20Salary%20Analysis"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-money-bill-wave"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/PowerBI-Projects/tree/main/The%20AI%2C%20ML%2C%20Data%20Science%20Salary%20Analysis" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>AI/ML Salary Analysis</h3>
-                        <p class="description">Visual analysis of salary trends in AI, ML, and Data Science across
-                            different regions.</p>
-                        <ul class="tech-list">
-                            <li>Power BI</li>
-                            <li>Salary Data</li>
-                            <li>Trends</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">PowerBI</span>
+                            <h3>AI/ML Salary Analysis</h3>
+                            <p class="description">Visual analysis of salary trends in AI, ML, and Data Science across different regions.</p>
+                            <ul class="tech-list"><li>Power BI</li><li>Salary Data</li><li>Trends</li></ul>
+                        </div>
                     </div>
                 </div>
 
@@ -807,25 +731,36 @@
                 </div>
 
                 <!-- Graduation Project -->
-                <h3 class="category-title"><i class="fas fa-graduation-cap"></i> Graduation Project <i
-                        class="fas fa-chevron-down"></i></h3>
-                <div class="projects-grid">
+                <h3 class="category-title active">
+                    <div class="cat-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+                    <span class="cat-label">Graduation Project</span>
+                    <i class="fas fa-chevron-down"></i>
+                </h3>
+                <div class="projects-grid active">
                     <div class="project-card" data-category="graduation">
-                        <div class="project-header">
-                            <i class="fas fa-folder-open folder-icon"></i>
-                            <div class="project-links">
-                                <a href="https://github.com/ahmedashraf792002/Leader-Graduation-Project"
-                                    target="_blank"><i class="fab fa-github"></i></a>
-                            </div>
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-brain"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/Leader-Graduation-Project" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
                         </div>
-                        <h3>Alzheimer’s Detection with GenerativeAI</h3>
-                        <p class="description">Innovative solution using AI and Generative technologies for early
-                            detection of Alzheimer's symptoms, improving treatment opportunities.</p>
-                        <ul class="tech-list">
-                            <li>GenerativeAI</li>
-                            <li>Deep Learning</li>
-                            <li>Healthcare</li>
-                        </ul>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Graduation Project</span>
+                            <h3>Alzheimer’s Detection with GenerativeAI</h3>
+                            <p class="description">Innovative solution using AI and Generative technologies for early detection of Alzheimer's symptoms, improving treatment opportunities.</p>
+                            <ul class="tech-list"><li>GenerativeAI</li><li>Deep Learning</li><li>Healthcare</li></ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="graduation">
+                        <div class="project-card-header">
+                            <div class="project-card-icon"><i class="fas fa-video"></i></div>
+                            <a href="https://github.com/ahmedashraf792002/EMA" target="_blank" class="project-card-header-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="project-card-inner">
+                            <span class="project-badge">Graduation Project</span>
+                            <h3>Classroom Monitor System (EMA)</h3>
+                            <p class="description">Real-time AI monitoring for student attendance and behavior using object detection, body tracking, and face recognition.</p>
+                            <ul class="tech-list"><li>Computer Vision</li><li>Real-time</li><li>Tracking</li></ul>
+                        </div>
                     </div>
                 </div>
 
