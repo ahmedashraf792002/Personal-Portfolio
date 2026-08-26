@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- Typewriter Effect --- */
     const textElement = document.getElementById('typing-text');
-    const texts = ["Natural Language Processing", "Computer Vision", "Deep Learning", "Predictive Analytics"];
+    const texts = ["Agentic AI", "Generative AI", "RAG & LLM Apps", "Data Science", "NLP", "ML & DL"];
     let count = 0;
     let index = 0;
     let currentText = "";
